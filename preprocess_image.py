@@ -3,8 +3,8 @@ import os
 import numpy as np
 
 def _preprocess(image_arr, th=0.4):
-    image_arr[image_arr > th] = 0.0
-    image_arr[image_arr <= th] = 1.0
+    image_arr[image_arr > th] = 1.0
+    image_arr[image_arr <= th] = 0.0
     return image_arr
 
 
