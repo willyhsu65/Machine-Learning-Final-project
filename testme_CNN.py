@@ -451,7 +451,7 @@ for i in range(len(model.layers)):
         num += 1
 
 
-preprocess_test = np.array(read_images_from_folder("D:\MachineLearning_FinalProject\code\\fake_mix_photo"), dtype="object")
+preprocess_test = np.array(read_images_from_folder("photo"), dtype="object")
 for i in range(len(preprocess_test)):
     preprocess_test[i] = _preprocess(preprocess_test[i])
 print(preprocess_test.shape)
